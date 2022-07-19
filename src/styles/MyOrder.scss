@@ -1,5 +1,6 @@
 .MyOrder {
     width: 360px;
+    height: auto;
     padding: 24px;
     box-sizing: border-box;
     position: absolute;
@@ -9,6 +10,9 @@
     bottom: 0;
     border-radius: 6px;
     border: 1px solid var(--very-light-pink);
+}
+.my-order-content {
+    height: 630px;
     overflow: auto;
 }
 .title-container {
