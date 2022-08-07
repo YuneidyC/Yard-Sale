@@ -15,7 +15,7 @@ const Header = () => {
     const { state } = useContext(AppContext);
 
     const handleToggle = () => {
-        setToggle(toggle);
+        setToggle(!toggle);
     }
 
     const totalCartItems = () => {
