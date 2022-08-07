@@ -1,0 +1,30 @@
+.Menu-header {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px 20px 0 20px;
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    left: 5px;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.Menu-header ul  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu-header ul li {
+    text-align: start;
+}
+
+.Menu-header ul li a {
+    color: var(--back);
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+}
