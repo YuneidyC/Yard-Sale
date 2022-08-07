@@ -16,6 +16,7 @@ const OrderItem = ({ product, index }) => {
                 <img src={product.images[0]} alt={product.title} />
             </figure>
             <p>{product.title}</p>
+            <p>{product.qty}x</p>
             <p>${product.price}</p>
             <img className="deleteItem" src={close} alt="close" onClick={() => handleRemove(product)} />
         </div>
