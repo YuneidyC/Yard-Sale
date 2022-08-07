@@ -12,7 +12,7 @@
     border: 1px solid var(--very-light-pink);
 }
 .my-order-content {
-    height: 630px;
+    height: 750px;
     overflow: auto;
 }
 .title-container {
@@ -70,7 +70,7 @@
     font-weight: bold;
     height: 50px;
 }
-@media (max-width: 640px) {
+@media (max-width: 740px) {
     .MyOrder {
         width: 100%;
     }
