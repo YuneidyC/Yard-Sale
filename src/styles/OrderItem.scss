@@ -1,9 +1,10 @@
 .OrderItem {
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
+    grid-template-columns: auto 100px 90px 50px auto;
     gap: 16px;
-    margin-bottom: 24px;
+    margin: 24px 0;
     align-items: center;
+    padding: 0 15px;
 }
 .OrderItem figure {
     margin: 0;
@@ -15,13 +16,46 @@
     object-fit: cover;
 }
 .OrderItem p:nth-child(2) {
+    display: flex;
     color: var(--very-light-pink);
 }
 .OrderItem p:nth-child(3) {
     font-size: var(--md);
+}
+.OrderItem p:nth-child(4) {
+    font-size: var(--md);
     font-weight: bold;
 }
-
 .OrderItem .deleteItem {
     cursor: pointer;
+}
+
+.OrderItem input {
+    width: 30px;
+}
+
+.OrderItem .cart-product-quantity {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.OrderItem .cart-product-quantity div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    padding: 0 5px;
+}
+
+.OrderItem .cart-product-quantity .add-to-cart, .reduce-item {
+    width: 24px;
+    height: 24px;
+    justify-items: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: var(--white);
+    border: none;
+    margin: 0 5px;
 }

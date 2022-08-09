@@ -35,10 +35,23 @@ const useInitialState = () => {
         });
     }
 
+    const reduceItem = (payload, indexValue) => {
+        if (payload.qty > 1) {
+            payload.qty--;
+            setState({
+                ...state,
+                cart: [...state.cart],
+            })
+        } else {
+            removeFromCart(payload, indexValue);
+        }
+    }
+
     return {
         state,
         addToCart,
         removeFromCart,
+        reduceItem
     }
 }
 
