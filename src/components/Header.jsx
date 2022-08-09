@@ -28,7 +28,7 @@ const Header = () => {
 
     return (
         <nav>
-            <img src={menu} alt="menu" className="menu" onClick={() => setToggleMenu(!toogleMenu)} role="button" />
+            <img src={menu} alt="menu" className="menu" onClick={() => { setToggleMenu(!toogleMenu); setToggleOrders(false) }} role="button" />
             <div className="navbar-left">
                 <img src={logo} alt="logo" className="nav-logo" />
                 <ul>
@@ -59,7 +59,7 @@ const Header = () => {
                     </li>
                     <li
                         className="navbar-shopping-cart"
-                        onClick={() => setToggleOrders(!toggleOrders)}
+                        onClick={() => { setToggleOrders(!toggleOrders); setToggleMenu(false); }}
                     >
                         <img src={shoppingCart} alt="shopping cart" />
                         {state.cart.length > 0 ? <div>{totalCartItems()}</div> : null}
