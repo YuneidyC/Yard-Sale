@@ -1,0 +1,102 @@
+.ProductDetails {
+    width: 100%;
+    height: 260px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-auto-flow: column;
+}
+
+.ProductDetails__image-container {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: 2;
+}
+
+.ProductDetails__image-container .image {
+    width: 100%;
+    height: 266px;
+    background-size: cover;
+    border-radius: 0 0 8px 8px;
+}
+
+.ProductDetails__image-container .close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.ProductDetails .ProductDetails__info-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    z-index: 0;
+    position: relative;
+    height: 260px;
+}
+
+.ProductDetails__info-container .price {
+    font-weight: bold;
+    font-size: var(--md);
+    margin: 20px 15px 20px;
+}
+
+.ProductDetails__info-container .title {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 0 15px 36px;
+}
+
+.ProductDetails__info-container .description {
+    width: 300px;
+    height: 100px;
+    font-weight: bold;
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin: 0 15px;
+    overflow: auto;
+}
+
+.ProductDetails__info-container .primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.ProductDetails__info-container .primary-button img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 90px;
+}
+
+.ProductDetails__info-container .add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 720px) {
+    .primary-button img {
+        display: none;
+    }
+}
+@media (min-width: 770px) {
+    .ProductDetails {
+        width: 100%;
+        margin: auto;
+    }
+}

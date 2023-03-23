@@ -1,13 +1,28 @@
+.ProductList_item_info {
+    position: sticky;
+    width: 90%;
+    height: 266px;
+    background: var(--white);
+    top: 61px;
+    overflow: hidden;
+    margin: auto;
+}
 .ProductList {
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     gap: 26px;
     place-content: center;
-    margin: 3em 0 0 0;
+    margin: 2em 0 3em 0;
 }
 
 @media (max-width: 640px) {
     .ProductList {
         grid-template-columns: repeat(auto-fill, 140px);
+    }
+}
+@media (min-width: 770px) {
+    .ProductList_item_info {
+        width: 750px;
+        margin: auto;
     }
 }
