@@ -7,8 +7,9 @@
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+    --font: "Quicksand", sans-serif;
 }
 body {
     margin: 0;
-    font-family: "Quicksand", sans-serif;
+    font-family: var(--font);
 }
