@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import useGetProducts from '@hooks/useGetProducts';
 
 const initialState = {
     cart: [],
@@ -6,13 +7,30 @@ const initialState = {
 
 const useInitialState = () => {
     const [state, setState] = useState(initialState);
+    const [currentProducts, setCurrentProducts] = useState([]);
+    const initialProducts = useGetProducts();
+
+    useEffect(() => {
+        setCurrentProducts(initialProducts);
+    }, [initialProducts]);
+    
+    function getAllProductsWithCategory(id) {
+        setCurrentProducts([]);
+        const products = initialProducts.filter(product =>
+            product.category.id === id);
+        setCurrentProducts(products);
+    }
+
+    function getAllProducts() {
+        setCurrentProducts(initialProducts);
+    }
 
     const addToCart = (payload) => {
         if (state.cart.length >= 0) {
             const found = state.cart.find(element => {
                 return element.id === payload.id;
             });
-            if (found != undefined) {
+            if (found !== undefined) {
                 found.qty++;
                 setState({
                     ...state,
@@ -49,9 +67,12 @@ const useInitialState = () => {
 
     return {
         state,
+        currentProducts,
         addToCart,
         removeFromCart,
-        reduceItem
+        reduceItem,
+        getAllProducts,
+        getAllProductsWithCategory,
     }
 }
 

@@ -1,29 +1,53 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '@styles/HeaderMenu.scss';
-import Header from './Header';
+import AppContext from '@context/AppContext';
 
 const HeaderMenu = () => {
+    const { getAllProductsWithCategory, getAllProducts } = useContext(AppContext);
+
+    const productsCategory = (category) => {
+        getAllProductsWithCategory(category);
+    }
+
     return (
         <div className="Menu-header">
             <h3>CATEGORIES</h3>
             <ul>
                 <li>
-                    <a href="/">All</a>
+                    <button type='button' onClick={() => {
+                        getAllProducts()
+                    }}>All
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Clothes</a>
+                    <button type='button' onClick={() => {
+                        productsCategory(1)
+                    }}>Clothes
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Electronics</a>
+                    <button type='button' onClick={() => {
+                        productsCategory(2)
+                    }}>Electronics
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Furnitures</a>
+                    <button type='button' onClick={() => {
+                        productsCategory(3)
+                    }}>Furnitures
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Shoes</a>
+                    <button type='button' onClick={() => {
+                        productsCategory(4)
+                    }}>Shoes
+                    </button>
                 </li>
                 <li>
-                    <a href="/">Others</a>
+                    <button type='button' onClick={() => {
+                        productsCategory(5)
+                    }}>Others
+                    </button>
                 </li>
             </ul>
             <div className='separator'></div>

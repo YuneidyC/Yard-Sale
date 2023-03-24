@@ -12,10 +12,10 @@ const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [toggleOrders, setToggleOrders] = useState(false);
     const [toogleMenu, setToggleMenu] = useState(false);
-    const { state } = useContext(AppContext);
+    const { state, getAllProductsWithCategory, getAllProducts } = useContext(AppContext);
 
-    const handleToggle = () => {
-        setToggle(!toggle);
+    const productsCategory = (category) => {
+        getAllProductsWithCategory(category);
     }
 
     const totalCartItems = () => {
@@ -33,22 +33,40 @@ const Header = () => {
                 <img src={logo} alt="logo" className="nav-logo" />
                 <ul>
                     <li>
-                        <a href="/">All</a>
+                        <button type='button' onClick={() => {
+                            getAllProducts()
+                        }}>All
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Clothes</a>
+                        <button type='button' onClick={() => {
+                            productsCategory(1)
+                        }}>Clothes
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Electronics</a>
+                        <button type='button' onClick={() => {
+                            productsCategory(2)
+                        }}>Electronics
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Furnitures</a>
+                        <button type='button' onClick={() => {
+                            productsCategory(3)
+                        }}>Furnitures
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Shoes</a>
+                        <button type='button' onClick={() => {
+                            productsCategory(4)
+                        }}>Shoes
+                        </button>
                     </li>
                     <li>
-                        <a href="/">Others</a>
+                        <button type='button' onClick={() => {
+                            productsCategory(5)
+                        }}>Others
+                        </button>
                     </li>
                 </ul>
             </div>

@@ -11,18 +11,26 @@
     cursor: pointer;
     box-sizing: border-box;
 }
-
 .Menu-header ul  {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-
 .Menu-header ul li {
     text-align: start;
     height: 40px;
 }
-
+.Menu-header ul li button {
+    font-family: var(--font);
+    background-color: var(--white);
+    font-size: var(--md);
+    border: none;
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
 .Menu-header ul li a {
     color: var(--black);
     text-decoration: none;
@@ -36,26 +44,21 @@
         height: 800px;
         font-weight: bold;
     }
-
     .Menu-header .separator {
         width: 40%;
         height: 2px;
         background-color: var(--very-light-pink);
         margin: 10px 0;
     }
-
     .Menu-header .account-user {
         margin-top: 30px;
     }
-
     .Menu-header .account-user ul li {
         margin-top: 10px;
     }
-
     .Menu-header .account-user ul li:nth-child(3)  {
         font-weight: 300;
     }
-
     .Menu-header .account-user ul li:last-child a {
         color: var(--hospital-green);
     }
