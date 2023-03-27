@@ -51,7 +51,7 @@
 .ProductDetails__info-container .title {
     color: var(--very-light-pink);
     font-size: var(--md);
-    margin: 0 15px 36px;
+    margin: 0 15px 19px;
 }
 
 .ProductDetails__info-container .description {
@@ -60,8 +60,11 @@
     font-weight: bold;
     color: var(--very-light-pink);
     font-size: var(--sm);
-    margin: 0 15px;
-    overflow: auto;
+    margin: 0 15px 18px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    white-space: normal;
+    text-overflow: ellipsis;
 }
 
 .ProductDetails__info-container .primary-button {
