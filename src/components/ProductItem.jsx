@@ -12,7 +12,7 @@ const ProductItem = ({ product, setShowProductDetails }) => {
 
     return (
         <div className="ProductItem">
-            <img src={product.images[0]} alt={product.title} onClick={() => { setShowProductDetails(product);}} />
+            <img src={product.images[0]} alt={product.title} onClick={() => setShowProductDetails(product)} />
             <div className="product-info">
                 <div>
                     <p>${product.price}</p>
