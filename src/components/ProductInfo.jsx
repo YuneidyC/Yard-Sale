@@ -1,17 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '@styles/ProductInfo.scss';
-import addToCart from '@icons/bt_add_to_cart.svg';
+import add from '@icons/bt_add_to_cart.svg';
+import close from '@icons/cancel.png';
+import AppContext from '@context/AppContext';
 
-const ProductInfo = () => {
+const ProductInfo = (props) => {
+    const { addToCart } = useContext(AppContext);
+
+    const handleClick = item => {
+        addToCart(item);
+    }
+
     return (
         <>
-            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
             <div className="ProductInfo">
-                <p>$35,00</p>
-                <p>Bike</p>
-                <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-                <button className="primary-button add-to-cart-button">
-                    <img src={addToCart} alt="add to cart" />
+                <div>
+                    <img className='image' src={props.productDetails.images[0]} />
+                    <img className='close' onClick={() => props.closeProduct('true')} src={close} alt="" />
+                </div>
+                <p className='price'>${props.productDetails.price}</p>
+                <p className='title'>{props.productDetails.title}</p>
+                <p className='description'>{props.productDetails.description}</p>
+                <button className="primary-button add-to-cart-button" onClick={() => handleClick(props.productDetails)}>
+                    <img src={add} alt="" />
                     Add to cart
                 </button>
             </div>
