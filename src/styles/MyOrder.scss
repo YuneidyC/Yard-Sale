@@ -73,7 +73,12 @@
 }
 @media (max-width: 740px) {
     .MyOrder {
-        width: 100%;
         height: 700px;
+    }
+}
+
+@media (max-width: 460px) {
+    .MyOrder {
+        width: 100%;
     }
 }
