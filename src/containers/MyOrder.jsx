@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
 import '@styles/MyOrder.scss';
@@ -12,8 +12,18 @@ const MyOrder = (props) => {
         return sum;
     }
 
+    const ref = useRef();
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (ref.current && !ref.current.contains(event.target)) {
+                props.changeToggleOrders('true');
+            }
+        };
+        document.addEventListener("click", handleClickOutside);
+    }, [ref]);
+
     return (
-        <aside className="MyOrder">
+        <aside className="MyOrder" ref={ref}>
             <div className="title-container">
                 <button type="button" alt="arrow" onClick={() => props.changeToggleOrders('true')}></button>
                 <p className="title">My order</p>

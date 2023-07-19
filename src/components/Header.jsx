@@ -84,7 +84,7 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            {toogleMenu && <HeaderMenu />}
+            {toogleMenu && <HeaderMenu changeToggleMenu={toogleMenu => setToggleMenu(!toogleMenu)} />}
             {toggle && <Menu />}
             {toggleOrders && <MyOrder changeToggleOrders={toggleOrders => setToggleOrders(!toggleOrders)} />}
         </nav>

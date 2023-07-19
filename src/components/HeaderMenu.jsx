@@ -1,16 +1,26 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef, useEffect } from 'react';
 import '@styles/HeaderMenu.scss';
 import AppContext from '@context/AppContext';
 
-const HeaderMenu = () => {
+const HeaderMenu = (props) => {
     const { getAllProductsWithCategory, getAllProducts } = useContext(AppContext);
 
     const productsCategory = (category) => {
         getAllProductsWithCategory(category);
     }
 
+    const ref = useRef();
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (ref.current && !ref.current.contains(event.target)) {
+                props.changeToggleMenu('true');
+            }
+        };
+        document.addEventListener("click", handleClickOutside);
+    }, [ref]);
+
     return (
-        <div className="Menu-header">
+        <div className="Menu-header" ref={ref}>
             <h3>CATEGORIES</h3>
             <ul>
                 <li>
