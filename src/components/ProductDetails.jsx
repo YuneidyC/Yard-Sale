@@ -17,7 +17,7 @@ const ProductDetails = ({ product, setShowProductDetails }) => {
 
     return (
         <>
-            {product && 
+            {product &&
                 <div className="ProductDetails">
                     <div className='ProductDetails__image-container'>
                         <img className='close' onClick={closeContainer} src={close} alt="close" />

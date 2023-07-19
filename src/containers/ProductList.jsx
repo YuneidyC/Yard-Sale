@@ -8,18 +8,9 @@ const ProductList = () => {
     const { currentProducts } = useContext(AppContext);
     const [showProductDetails, setShowProductDetails] = useState([]);
 
-    const ref = useRef();
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (!ref.current.contains(event.target)) {
-                setShowProductDetails([]);
-            }
-        };
-        document.addEventListener("click", handleClickOutside);
-    }, []);
 
     return (
-        <section className="main-container" ref={ref}>
+        <section className="main-container">
             {showProductDetails.length !== 0 &&
                 <div className="ProductList_item_info" >
                     <ProductDetails product={showProductDetails} setShowProductDetails={setShowProductDetails} />
@@ -27,7 +18,7 @@ const ProductList = () => {
             }
             <div className="ProductList">
                 {currentProducts.map(product => (
-                    <ProductItem product={product} key={product.id} category={0} setShowProductDetails={setShowProductDetails} />
+                    <ProductItem product={product} setShowProductDetails={setShowProductDetails} />
                 ))}
             </div>
         </section>
