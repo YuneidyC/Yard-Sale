@@ -1,12 +1,14 @@
+@use 'global';
+
 nav {
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
-    border-bottom: 1px solid var(--very-light-pink);
+    border-bottom: 1px solid global.$very-light-pink;
     position: sticky;
     top: 0;
     width: calc(100% - 3em);
-    background-color: var(--white);
+    background-color: global.$white;
     z-index: 100;
 }
 .menu {
@@ -34,22 +36,22 @@ nav {
 .navbar-left ul li button,
 .navbar-right ul li button {
     text-decoration: none;
-    color: var(--very-light-pink);
-    border: 1px solid var(--white);
+    color: global.$very-light-pink;
+    border: 1px solid global.$white;
     padding: 8px;
     border-radius: 8px;
-    background-color: var(--white);
-    font-size: var(--md);
+    background-color: global.$white;
+    font-size: global.$md;
     cursor: pointer;
 }
 .navbar-left ul li button:hover,
 .navbar-right ul li button:hover {
-    border: 1px solid var(--hospital-green);
-    color: var(--hospital-green);
+    border: 1px solid global.$hospital-green;
+    color: global.$hospital-green;
 }
 .navbar-email {
-    color: var(--very-light-pink);
-    font-size: var(--sm);
+    color: global.$very-light-pink;
+    font-size: global.$sm;
     margin-right: 12px;
 }
 .navbar-shopping-cart {
@@ -58,9 +60,9 @@ nav {
 .navbar-shopping-cart div {
     width: 16px;
     height: 16px;
-    background-color: var(--hospital-green);
+    background-color: global.$hospital-green;
     border-radius: 50%;
-    font-size: var(--sm);
+    font-size: global.$sm;
     font-weight: bold;
     position: absolute;
     top: -6px;

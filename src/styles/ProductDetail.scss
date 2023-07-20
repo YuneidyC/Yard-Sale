@@ -1,3 +1,5 @@
+@use 'global';
+
 .ProductDetail {
     width: 360px;
     padding-bottom: 24px;
@@ -5,7 +7,7 @@
     right: 0;
 }
 .ProductDetail-close {
-    background: var(--white);
+    background: global.$white;
     width: 14px;
     height: 14px;
     position: absolute;

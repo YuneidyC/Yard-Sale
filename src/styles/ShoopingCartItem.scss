@@ -1,3 +1,5 @@
+@use 'global';
+
 .ShoppingCartItem {
 	display: grid;
 	grid-template-columns: auto 1fr auto auto;
@@ -15,9 +17,9 @@
 	object-fit: cover;
 }
 .ShoppingCartItem p:nth-child(2) {
-	color: var(--very-light-pink);
+	color: global.$very-light-pink;
 }
 .ShoppingCartItem p:nth-child(3) {
-	font-size: var(--md);
+	font-size: global.$md;
 	font-weight: bold;
 }

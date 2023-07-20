@@ -1,3 +1,5 @@
+@use 'global';
+
 .ProductItem {
 	width: 240px;
 }
@@ -28,16 +30,16 @@
 }
 .product-info div p:nth-child(1) {
     font-weight: bold;
-	font-size: var(--md);
+	font-size: global.$md;
 	margin-top: 0;
 	margin-bottom: 4px;
 }
 .product-info div p:nth-child(2) {
     height: 60px;
-    font-size: var(--sm);
+    font-size: global.$sm;
 	margin-top: 0;
 	margin-bottom: 0;
-	color: var(--very-light-pink);
+	color: global.$very-light-pink;
     overflow: scroll;
 }
 @media (max-width: 640px) {

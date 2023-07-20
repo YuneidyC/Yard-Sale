@@ -1,13 +1,15 @@
+@use 'global';
+
 .Menu-header {
     width: 50%;
     height: auto;
-    border: 1px solid var(--very-light-pink);
+    border: 1px solid global.$very-light-pink;
     border-radius: 6px;
     padding: 24px;
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: var(--white);
+    background-color: global.$white;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -21,18 +23,18 @@
     height: 40px;
 }
 .Menu-header ul li button {
-    font-family: var(--font);
-    background-color: var(--white);
-    font-size: var(--md);
+    font-family: global.$font;
+    background-color: global.$white;
+    font-size: global.$md;
     border: none;
-    color: var(--black);
+    color: global.$black;
     font-weight: bold;
     text-align: center;
     display: inline-block;
     cursor: pointer;
 }
 .Menu-header ul li a {
-    color: var(--black);
+    color: global.$black;
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
@@ -47,7 +49,7 @@
     .Menu-header .separator {
         width: 40%;
         height: 2px;
-        background-color: var(--very-light-pink);
+        background-color: global.$very-light-pink;
         margin: 10px 0;
     }
     .Menu-header .account-user {
@@ -60,7 +62,7 @@
         font-weight: 300;
     }
     .Menu-header .account-user ul li:last-child a {
-        color: var(--hospital-green);
+        color: global.$hospital-green;
     }
 }
 
