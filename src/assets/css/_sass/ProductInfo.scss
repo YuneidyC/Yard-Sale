@@ -3,24 +3,25 @@
 .ProductInfo {
     margin: 24px 24px 0 24px;
 }
-.ProductInfo p:nth-child(1) {
+.ProductInfo>div>p:nth-child(1) {
     font-weight: bold;
     font-size: global.$md;
     margin-top: 0;
     margin-bottom: 4px;
 }
-.ProductInfo p:nth-child(2) {
+.ProductInfo>div>p:nth-child(2) {
     color: global.$very-light-pink;
     font-size: global.$md;
     margin-top: 0;
     margin-bottom: 36px;
+    font-family: global.$font
 }
-.ProductInfo p:nth-child(3) {
-    color: global.$very-light-pink;
-    font-size: global.$sm;
-    margin-top: 0;
-    margin-bottom: 36px;
-}
+// .ProductInfo p:nth-child(3) {
+//     color: global.$very-light-pink;
+//     font-size: global.$sm;
+//     margin-top: 0;
+//     margin-bottom: 36px;
+// }
 .primary-button {
     background-color: global.$hospital-green;
     border-radius: 8px;
