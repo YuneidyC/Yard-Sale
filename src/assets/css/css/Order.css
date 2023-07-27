@@ -1,0 +1,27 @@
+.Order {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.Order p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.Order p span:nth-child(1) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Order p span:nth-child(2) {
+  font-size: 14px;
+  color: #c7c7c7;
+}
+
+.Order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}/*# sourceMappingURL=Order.css.map */

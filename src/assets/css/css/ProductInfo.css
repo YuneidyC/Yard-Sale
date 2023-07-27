@@ -1,0 +1,36 @@
+.ProductInfo {
+  margin: 24px 24px 0 24px;
+}
+
+.ProductInfo > div > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.ProductInfo > div > p:nth-child(2) {
+  color: #c7c7c7;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.primary-button {
+  background-color: #acd9b2;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.add-to-cart-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=ProductInfo.css.map */
