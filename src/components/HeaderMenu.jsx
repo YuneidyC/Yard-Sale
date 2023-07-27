@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useEffect } from 'react';
-import '@styles/HeaderMenu.scss';
+import '@styles/_HeaderMenu.scss';
 import AppContext from '@context/AppContext';
 
 const HeaderMenu = (props) => {
