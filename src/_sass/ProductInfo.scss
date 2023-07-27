@@ -1,35 +1,28 @@
-@use 'global';
+@use 'styles';
 
 .ProductInfo {
     margin: 24px 24px 0 24px;
 }
 .ProductInfo>div>p:nth-child(1) {
     font-weight: bold;
-    font-size: global.$md;
+    font-size: styles.$md;
     margin-top: 0;
     margin-bottom: 4px;
 }
 .ProductInfo>div>p:nth-child(2) {
-    color: global.$very-light-pink;
-    font-size: global.$md;
+    color: styles.$very-light-pink;
+    font-size: styles.$md;
     margin-top: 0;
     margin-bottom: 36px;
-    font-family: global.$font
 }
-// .ProductInfo p:nth-child(3) {
-//     color: global.$very-light-pink;
-//     font-size: global.$sm;
-//     margin-top: 0;
-//     margin-bottom: 36px;
-// }
 .primary-button {
-    background-color: global.$hospital-green;
+    background-color: styles.$hospital-green;
     border-radius: 8px;
     border: none;
-    color: global.$white;
+    color: styles.$white;
     width: 100%;
     cursor: pointer;
-    font-size: global.$md;
+    font-size: styles.$md;
     font-weight: bold;
     height: 50px;
 }

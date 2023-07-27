@@ -1,4 +1,4 @@
-@use 'global';
+@use 'styles';
 
 .ProductItem {
 	width: 240px;
@@ -15,34 +15,32 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 12px;
-    grid-template-columns: 100px 35px;
-    height: 90px;
+    grid-template-columns: auto 35px;
+    height: 80px;
 }
 .product-info figure {
-    margin: 0;
+	margin: 0;
     justify-self: center;
     align-self: center;
 }
 .product-info figure img {
-    width: 35px;
+	width: 35px;
 	height: 35px;
     cursor: pointer;
 }
 .product-info div p:nth-child(1) {
-    font-family: global.$font;
     font-weight: bold;
-	font-size: global.$md;
+	font-size: styles.$md;
 	margin-top: 0;
 	margin-bottom: 4px;
 }
 .product-info div p:nth-child(2) {
-    height: 60px;
-    font-size: global.$sm;
-    font-family: global.$font;
+	height: 48px;
+    font-size: styles.$sm;
 	margin-top: 0;
 	margin-bottom: 0;
-	color: global.$very-light-pink;
-    overflow: scroll;
+	color: styles.$very-light-pink;
+	min-width: 100px;
 }
 @media (max-width: 640px) {
 	.ProductItem {
@@ -51,5 +49,8 @@
 	.ProductItem img {
 		width: 140px;
 		height: 140px;
+	}
+	.product-info {
+		grid-template-columns: 100px 35px;
 	}
 }

@@ -1,3 +1,4 @@
+/* file import */
 .ProductItem {
   width: 240px;
 }
@@ -16,8 +17,8 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 12px;
-  grid-template-columns: 100px 35px;
-  height: 90px;
+  grid-template-columns: auto 35px;
+  height: 80px;
 }
 
 .product-info figure {
@@ -33,7 +34,6 @@
 }
 
 .product-info div p:nth-child(1) {
-  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 16px;
   margin-top: 0;
@@ -41,13 +41,12 @@
 }
 
 .product-info div p:nth-child(2) {
-  height: 60px;
+  height: 48px;
   font-size: 14px;
-  font-family: "Quicksand", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   color: #c7c7c7;
-  overflow: scroll;
+  min-width: 100px;
 }
 
 @media (max-width: 640px) {
@@ -57,5 +56,8 @@
   .ProductItem img {
     width: 140px;
     height: 140px;
+  }
+  .product-info {
+    grid-template-columns: 100px 35px;
   }
 }/*# sourceMappingURL=ProductItem.css.map */

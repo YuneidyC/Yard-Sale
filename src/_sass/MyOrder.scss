@@ -1,4 +1,4 @@
-@use 'global';
+@use 'styles';
 
 .MyOrder {
     width: 462px;
@@ -7,12 +7,11 @@
     box-sizing: border-box;
     position: absolute;
     right: 0;
-    background-color: global.$white;
+    background-color: styles.$white;
     top: 60px;
     bottom: 0;
     border-radius: 6px;
-    border: 1px solid global.$very-light-pink;
-    font-family: global.$font;
+    border: 1px solid styles.$very-light-pink;
 }
 .my-order-content {
     height: 480px;
@@ -30,13 +29,13 @@
     background-image: url('/src/assets/icons/flechita.svg');
     background-repeat: no-repeat;
     border: none;
-    background-color: global.$white;
+    background-color: styles.$white;
     transform: rotate(180deg);
     margin-right: 16px;
     cursor: pointer;
 }
 .title-container .title {
-    font-size: global.$lg;
+    font-size: styles.$lg;
     font-weight: bold;
     margin: 0;
 }
@@ -45,7 +44,7 @@
     grid-template-columns: auto 1fr;
     gap: 16px;
     align-items: center;
-    background-color: global.$text-input-field;
+    background-color: styles.$text-input-field;
     margin: 20px 0;
     border-radius: 8px;
     padding: 0 24px;
@@ -55,7 +54,7 @@
     flex-direction: column;
 }
 .order p span:nth-child(1) {
-    font-size: global.$md;
+    font-size: styles.$md;
     font-weight: bold;
 }
 .order p:nth-child(2) {
@@ -64,13 +63,13 @@
 }
 
 .primary-button {
-    background-color: global.$hospital-green;
+    background-color: styles.$hospital-green;
     border-radius: 8px;
     border: none;
-    color: global.$white;
+    color: styles.$white;
     width: 100%;
     cursor: pointer;
-    font-size: global.$md;
+    font-size: styles.$md;
     font-weight: bold;
     height: 50px;
 }

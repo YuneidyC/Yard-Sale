@@ -1,3 +1,4 @@
+/* file import */
 .ProductInfo {
   margin: 24px 24px 0 24px;
 }
@@ -14,7 +15,6 @@
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 36px;
-  font-family: "Quicksand", sans-serif;
 }
 
 .primary-button {

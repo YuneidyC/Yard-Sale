@@ -1,14 +1,14 @@
-@use 'global';
+@use 'styles';
 
 nav {
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
-    border-bottom: 1px solid global.$very-light-pink;
+    border-bottom: 1px solid styles.$very-light-pink;
     position: sticky;
     top: 0;
     width: calc(100% - 3em);
-    background-color: global.$white;
+    background-color: styles.$white;
     z-index: 100;
 }
 .menu {
@@ -36,22 +36,22 @@ nav {
 .navbar-left ul li button,
 .navbar-right ul li button {
     text-decoration: none;
-    color: global.$very-light-pink;
-    border: 1px solid global.$white;
+    color: styles.$very-light-pink;
+    border: 1px solid styles.$white;
     padding: 8px;
     border-radius: 8px;
-    background-color: global.$white;
-    font-size: global.$md;
+    background-color: styles.$white;
+    font-size: styles.$md;
     cursor: pointer;
 }
 .navbar-left ul li button:hover,
 .navbar-right ul li button:hover {
-    border: 1px solid global.$hospital-green;
-    color: global.$hospital-green;
+    border: 1px solid styles.$hospital-green;
+    color: styles.$hospital-green;
 }
 .navbar-email {
-    color: global.$very-light-pink;
-    font-size: global.$sm;
+    color: styles.$very-light-pink;
+    font-size: styles.$sm;
     margin-right: 12px;
 }
 .navbar-shopping-cart {
@@ -60,9 +60,9 @@ nav {
 .navbar-shopping-cart div {
     width: 16px;
     height: 16px;
-    background-color: global.$hospital-green;
+    background-color: styles.$hospital-green;
     border-radius: 50%;
-    font-size: global.$sm;
+    font-size: styles.$sm;
     font-weight: bold;
     position: absolute;
     top: -6px;

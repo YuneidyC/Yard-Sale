@@ -1,4 +1,4 @@
-@use 'global';
+@use 'styles';
 
 .OrderItem {
     display: grid;
@@ -22,15 +22,15 @@
 }
 .OrderItem p:nth-child(2) {
     display: flex;
-    color: global.$very-light-pink;
+    color: styles.$very-light-pink;
     grid-column: 3 / 4;
     height: 70px;
 }
 .OrderItem p:nth-child(3) {
-    font-size: global.$md;
+    font-size: styles.$md;
 }
 .OrderItem p:nth-child(4) {
-    font-size: global.$md;
+    font-size: styles.$md;
     font-weight: bold;
     grid-column: 5 / 6;
 }
@@ -65,7 +65,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-color: global.$white;
+    background-color: styles.$white;
     border: none;
     margin: 0 5px;
 }

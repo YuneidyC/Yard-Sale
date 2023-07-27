@@ -1,4 +1,4 @@
-@use 'global';
+@use 'styles';
 
 .Orders {
 	width: 100%;
@@ -7,7 +7,7 @@
 	place-items: center;
 }
 .title {
-	font-size: global.$lg;
+	font-size: styles.$lg;
 	margin-bottom: 40px;
 }
 .Orders-container {

@@ -1,4 +1,4 @@
-@use 'global';
+@use 'styles';
 
 .ProductDetail {
     width: 360px;
@@ -7,7 +7,7 @@
     right: 0;
 }
 .ProductDetail-close {
-    background: global.$white;
+    background: styles.$white;
     width: 14px;
     height: 14px;
     position: absolute;

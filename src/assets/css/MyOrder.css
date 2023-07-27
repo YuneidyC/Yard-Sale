@@ -1,3 +1,4 @@
+/* file import */
 .MyOrder {
   width: 462px;
   height: 700px;
@@ -10,7 +11,6 @@
   bottom: 0;
   border-radius: 6px;
   border: 1px solid #c7c7c7;
-  font-family: "Quicksand", sans-serif;
 }
 
 .my-order-content {

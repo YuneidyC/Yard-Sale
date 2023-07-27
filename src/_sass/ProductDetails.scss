@@ -1,4 +1,4 @@
-@use 'global';
+@use 'styles';
 
 .ProductDetails {
     width: 100%;
@@ -47,22 +47,22 @@
 
 .ProductDetails__info-container .price {
     font-weight: bold;
-    font-size: global.$md;
+    font-size: styles.$md;
     margin: 16px 14px;
 }
 
 .ProductDetails__info-container .title {
     height: 40px;
-    color: global.$very-light-pink;
-    font-size: global.$md;
+    color: styles.$very-light-pink;
+    font-size: styles.$md;
     margin: 0 15px 14px;
 }
 
 .ProductDetails__info-container .description {
     height: 106px;
     font-weight: bold;
-    color: global.$very-light-pink;
-    font-size: global.$sm;
+    color: styles.$very-light-pink;
+    font-size: styles.$sm;
     margin: 0 15px 14px;
     white-space: normal;
     text-overflow: ellipsis;
@@ -71,13 +71,13 @@
 }
 
 .ProductDetails__info-container .primary-button {
-    background-color: global.$hospital-green;
+    background-color: styles.$hospital-green;
     border-radius: 8px;
     border: none;
-    color: global.$white;
+    color: styles.$white;
     width: 100%;
     cursor: pointer;
-    font-size: global.$md;
+    font-size: styles.$md;
     font-weight: bold;
     height: 40px;
 }

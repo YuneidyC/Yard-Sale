@@ -1,4 +1,4 @@
-@use 'global';
+@use 'styles';
 
 .Order {
     display: grid;
@@ -12,12 +12,12 @@
     flex-direction: column;
 }
 .Order p span:nth-child(1) {
-    font-size: global.$md;
+    font-size: styles.$md;
     font-weight: bold;
 }
 .Order p span:nth-child(2) {
-    font-size: global.$sm;
-    color: global.$very-light-pink;
+    font-size: styles.$sm;
+    color: styles.$very-light-pink;
 }
 .Order p:nth-child(2) {
     text-align: end;

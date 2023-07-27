@@ -1,15 +1,15 @@
-@use 'global';
+@use 'styles';
 
 .Menu {
     width: 100px;
     height: auto;
-    border: 1px solid global.$very-light-pink;
+    border: 1px solid styles.$very-light-pink;
     border-radius: 6px;
     padding: 20px 20px 0 20px;
     position: absolute;
     top: 60px;
     right: 50px;
-    background-color: global.$white;
+    background-color: styles.$white;
 }
 .Menu ul {
     list-style: none;
@@ -25,14 +25,14 @@
 }
 .Menu ul li:last-child {
     padding-top: 20px;
-    border-top: 1px solid global.$very-light-pink;
+    border-top: 1px solid styles.$very-light-pink;
 }
 .Menu ul li:last-child a {
-    color: global.$hospital-green;
-    font-size: global.$sm;
+    color: styles.$hospital-green;
+    font-size: styles.$sm;
 }
 .Menu ul li a {
-    color: global.$black;
+    color: styles.$black;
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
