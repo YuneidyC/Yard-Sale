@@ -1,4 +1,4 @@
-@use 'variables';
+@import 'variables';
 
 .ProductDetail {
     width: 360px;
@@ -7,7 +7,7 @@
     right: 0;
 }
 .ProductDetail-close {
-    background: variables.$white;
+    background: $white;
     width: 14px;
     height: 14px;
     position: absolute;

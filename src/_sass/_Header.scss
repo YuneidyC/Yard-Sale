@@ -1,14 +1,14 @@
-@use 'variables';
+@import 'variables';
 
 nav {
     display: flex;
     justify-content: space-between;
     padding: 0 24px;
-    border-bottom: 1px solid variables.$very-light-pink;
+    border-bottom: 1px solid $very-light-pink;
     position: sticky;
     top: 0;
     width: calc(100% - 3em);
-    background-color: variables.$white;
+    background-color: $white;
     z-index: 100;
 }
 .menu {
@@ -36,22 +36,22 @@ nav {
 .navbar-left ul li button,
 .navbar-right ul li button {
     text-decoration: none;
-    color: variables.$very-light-pink;
-    border: 1px solid variables.$white;
+    color: $very-light-pink;
+    border: 1px solid $white;
     padding: 8px;
     border-radius: 8px;
-    background-color: variables.$white;
-    font-size: variables.$md;
+    background-color: $white;
+    font-size: $md;
     cursor: pointer;
 }
 .navbar-left ul li button:hover,
 .navbar-right ul li button:hover {
-    border: 1px solid variables.$hospital-green;
-    color: variables.$hospital-green;
+    border: 1px solid $hospital-green;
+    color: $hospital-green;
 }
 .navbar-email {
-    color: variables.$very-light-pink;
-    font-size: variables.$sm;
+    color: $very-light-pink;
+    font-size: $sm;
     margin-right: 12px;
 }
 .navbar-shopping-cart {
@@ -60,9 +60,9 @@ nav {
 .navbar-shopping-cart div {
     width: 16px;
     height: 16px;
-    background-color: variables.$hospital-green;
+    background-color: $hospital-green;
     border-radius: 50%;
-    font-size: variables.$sm;
+    font-size: $sm;
     font-weight: bold;
     position: absolute;
     top: -6px;

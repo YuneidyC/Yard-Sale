@@ -1,28 +1,28 @@
-@use 'variables';
+@import 'variables';
 
 .ProductInfo {
     margin: 24px 24px 0 24px;
 }
 .ProductInfo>div>p:nth-child(1) {
     font-weight: bold;
-    font-size: variables.$md;
+    font-size: $md;
     margin-top: 0;
     margin-bottom: 4px;
 }
 .ProductInfo>div>p:nth-child(2) {
-    color: variables.$very-light-pink;
-    font-size: variables.$md;
+    color: $very-light-pink;
+    font-size: $md;
     margin-top: 0;
     margin-bottom: 36px;
 }
 .primary-button {
-    background-color: variables.$hospital-green;
+    background-color: $hospital-green;
     border-radius: 8px;
     border: none;
-    color: variables.$white;
+    color: $white;
     width: 100%;
     cursor: pointer;
-    font-size: variables.$md;
+    font-size: $md;
     font-weight: bold;
     height: 50px;
 }

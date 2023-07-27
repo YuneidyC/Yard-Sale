@@ -1,4 +1,4 @@
-@use 'variables';
+@import 'variables';
 
 .Orders {
 	width: 100%;
@@ -7,7 +7,7 @@
 	place-items: center;
 }
 .title {
-	font-size: variables.$lg;
+	font-size: $lg;
 	margin-bottom: 40px;
 }
 .Orders-container {

@@ -1,4 +1,4 @@
-@use 'variables';
+@import 'variables';
 
 .ShoppingCartItem {
 	display: grid;
@@ -17,9 +17,9 @@
 	object-fit: cover;
 }
 .ShoppingCartItem p:nth-child(2) {
-	color: variables.$very-light-pink;
+	color: $very-light-pink;
 }
 .ShoppingCartItem p:nth-child(3) {
-	font-size: variables.$md;
+	font-size: $md;
 	font-weight: bold;
 }

@@ -1,15 +1,15 @@
-@use 'variables';
+@import 'variables';
 
 .Menu-header {
     width: 50%;
     height: auto;
-    border: 1px solid variables.$very-light-pink;
+    border: 1px solid $very-light-pink;
     border-radius: 6px;
     padding: 24px;
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: variables.$white;
+    background-color: $white;
     cursor: pointer;
     box-sizing: border-box;
 }
@@ -23,17 +23,17 @@
     height: 40px;
 }
 .Menu-header ul li button {
-    background-color: variables.$white;
-    font-size: variables.$md;
+    background-color: $white;
+    font-size: $md;
     border: none;
-    color: variables.$black;
+    color: $black;
     font-weight: bold;
     text-align: center;
     display: inline-block;
     cursor: pointer;
 }
 .Menu-header ul li a {
-    color: variables.$black;
+    color: $black;
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
@@ -48,7 +48,7 @@
     .Menu-header .separator {
         width: 40%;
         height: 2px;
-        background-color: variables.$very-light-pink;
+        background-color: $very-light-pink;
         margin: 10px 0;
     }
     .Menu-header .account-user {
@@ -61,7 +61,7 @@
         font-weight: 300;
     }
     .Menu-header .account-user ul li:last-child a {
-        color: variables.$hospital-green;
+        color: $hospital-green;
     }
 }
 

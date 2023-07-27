@@ -1,4 +1,4 @@
-@use 'variables';
+@import 'variables';
 
 .OrderItem {
     display: grid;
@@ -22,15 +22,15 @@
 }
 .OrderItem p:nth-child(2) {
     display: flex;
-    color: variables.$very-light-pink;
+    color: $very-light-pink;
     grid-column: 3 / 4;
     height: 70px;
 }
 .OrderItem p:nth-child(3) {
-    font-size: variables.$md;
+    font-size: $md;
 }
 .OrderItem p:nth-child(4) {
-    font-size: variables.$md;
+    font-size: $md;
     font-weight: bold;
     grid-column: 5 / 6;
 }
@@ -65,7 +65,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-color: variables.$white;
+    background-color: $white;
     border: none;
     margin: 0 5px;
 }

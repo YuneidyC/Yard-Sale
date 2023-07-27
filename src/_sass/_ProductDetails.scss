@@ -1,4 +1,4 @@
-@use 'variables';
+@import 'variables';
 
 .ProductDetails {
     width: 100%;
@@ -47,22 +47,22 @@
 
 .ProductDetails__info-container .price {
     font-weight: bold;
-    font-size: variables.$md;
+    font-size: $md;
     margin: 16px 14px;
 }
 
 .ProductDetails__info-container .title {
     height: 40px;
-    color: variables.$very-light-pink;
-    font-size: variables.$md;
+    color: $very-light-pink;
+    font-size: $md;
     margin: 0 15px 14px;
 }
 
 .ProductDetails__info-container .description {
     height: 106px;
     font-weight: bold;
-    color: variables.$very-light-pink;
-    font-size: variables.$sm;
+    color: $very-light-pink;
+    font-size: $sm;
     margin: 0 15px 14px;
     white-space: normal;
     text-overflow: ellipsis;
@@ -71,13 +71,13 @@
 }
 
 .ProductDetails__info-container .primary-button {
-    background-color: variables.$hospital-green;
+    background-color: $hospital-green;
     border-radius: 8px;
     border: none;
-    color: variables.$white;
+    color: $white;
     width: 100%;
     cursor: pointer;
-    font-size: variables.$md;
+    font-size: $md;
     font-weight: bold;
     height: 40px;
 }

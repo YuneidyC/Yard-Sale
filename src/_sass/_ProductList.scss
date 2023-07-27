@@ -1,10 +1,10 @@
-@use 'variables';
+@import 'variables';
 
 .ProductList_item_info {
     position: sticky;
     width: 90%;
     height: 266px;
-    background: variables.$white;
+    background: $white;
     top: 0;
     overflow: hidden;
     margin: auto;
