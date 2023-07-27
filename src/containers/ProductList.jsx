@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState, useRef } from 'react';
 import ProductItem from '@components/ProductItem';
 import ProductDetails from '@components/ProductDetails';
-import '@styles/ProductList.scss';
+import '@styles/_ProductList.scss';
 import AppContext from '@context/AppContext';
 
 const ProductList = () => {

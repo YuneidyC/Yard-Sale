@@ -123,7 +123,6 @@ nav .menu {
 }
 
 .Menu-header ul li button {
-  font-family: "Quicksand", sans-serif;
   background-color: white;
   font-size: 16px;
   border: none;
@@ -146,7 +145,6 @@ nav .menu {
     width: 100%;
     height: 800px;
     font-weight: bold;
-    font-family: "Quicksand", sans-serif;
   }
   .Menu-header .separator {
     width: 40%;
@@ -235,7 +233,6 @@ nav .menu {
   bottom: 0;
   border-radius: 6px;
   border: 1px solid #c7c7c7;
-  font-family: "Quicksand", sans-serif;
 }
 
 .my-order-content {
@@ -667,7 +664,6 @@ nav .menu {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 36px;
-  font-family: "Quicksand", sans-serif;
 }
 
 .primary-button {
@@ -723,7 +719,6 @@ nav .menu {
 }
 
 .product-info div p:nth-child(1) {
-  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 16px;
   margin-top: 0;
@@ -733,7 +728,6 @@ nav .menu {
 .product-info div p:nth-child(2) {
   height: 48px;
   font-size: 14px;
-  font-family: "Quicksand", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   color: #c7c7c7;
@@ -789,35 +783,6 @@ nav .menu {
     width: 100%;
     margin: auto;
   }
-} 
-/* file import */
-.ShoppingCartItem {
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  gap: 16px;
-  margin-bottom: 24px;
-  align-items: center;
-}
-
-.ShoppingCartItem figure {
-  margin: 0;
-}
-
-.ShoppingCartItem figure img {
-  width: 70px;
-  height: 70px;
-  border-radius: 20px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
-.ShoppingCartItem p:nth-child(2) {
-  color: #c7c7c7;
-}
-
-.ShoppingCartItem p:nth-child(3) {
-  font-size: 16px;
-  font-weight: bold;
 } 
 body {
   font-family: "Quicksand", sans-serif;
