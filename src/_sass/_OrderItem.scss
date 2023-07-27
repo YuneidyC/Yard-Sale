@@ -22,15 +22,15 @@
 }
 .OrderItem p:nth-child(2) {
     display: flex;
-    color: styles.$very-light-pink;
+    color: variables.$very-light-pink;
     grid-column: 3 / 4;
     height: 70px;
 }
 .OrderItem p:nth-child(3) {
-    font-size: styles.$md;
+    font-size: variables.$md;
 }
 .OrderItem p:nth-child(4) {
-    font-size: styles.$md;
+    font-size: variables.$md;
     font-weight: bold;
     grid-column: 5 / 6;
 }
@@ -65,7 +65,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
-    background-color: styles.$white;
+    background-color: variables.$white;
     border: none;
     margin: 0 5px;
 }

@@ -47,22 +47,22 @@
 
 .ProductDetails__info-container .price {
     font-weight: bold;
-    font-size: styles.$md;
+    font-size: variables.$md;
     margin: 16px 14px;
 }
 
 .ProductDetails__info-container .title {
     height: 40px;
-    color: styles.$very-light-pink;
-    font-size: styles.$md;
+    color: variables.$very-light-pink;
+    font-size: variables.$md;
     margin: 0 15px 14px;
 }
 
 .ProductDetails__info-container .description {
     height: 106px;
     font-weight: bold;
-    color: styles.$very-light-pink;
-    font-size: styles.$sm;
+    color: variables.$very-light-pink;
+    font-size: variables.$sm;
     margin: 0 15px 14px;
     white-space: normal;
     text-overflow: ellipsis;
@@ -71,13 +71,13 @@
 }
 
 .ProductDetails__info-container .primary-button {
-    background-color: styles.$hospital-green;
+    background-color: variables.$hospital-green;
     border-radius: 8px;
     border: none;
-    color: styles.$white;
+    color: variables.$white;
     width: 100%;
     cursor: pointer;
-    font-size: styles.$md;
+    font-size: variables.$md;
     font-weight: bold;
     height: 40px;
 }

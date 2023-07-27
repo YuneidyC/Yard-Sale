@@ -7,11 +7,11 @@
     box-sizing: border-box;
     position: absolute;
     right: 0;
-    background-color: styles.$white;
+    background-color: variables.$white;
     top: 60px;
     bottom: 0;
     border-radius: 6px;
-    border: 1px solid styles.$very-light-pink;
+    border: 1px solid variables.$very-light-pink;
 }
 .my-order-content {
     height: 480px;
@@ -29,13 +29,13 @@
     background-image: url('/src/assets/icons/flechita.svg');
     background-repeat: no-repeat;
     border: none;
-    background-color: styles.$white;
+    background-color: variables.$white;
     transform: rotate(180deg);
     margin-right: 16px;
     cursor: pointer;
 }
 .title-container .title {
-    font-size: styles.$lg;
+    font-size: variables.$lg;
     font-weight: bold;
     margin: 0;
 }
@@ -44,7 +44,7 @@
     grid-template-columns: auto 1fr;
     gap: 16px;
     align-items: center;
-    background-color: styles.$text-input-field;
+    background-color: variables.$text-input-field;
     margin: 20px 0;
     border-radius: 8px;
     padding: 0 24px;
@@ -54,7 +54,7 @@
     flex-direction: column;
 }
 .order p span:nth-child(1) {
-    font-size: styles.$md;
+    font-size: variables.$md;
     font-weight: bold;
 }
 .order p:nth-child(2) {
@@ -63,13 +63,13 @@
 }
 
 .primary-button {
-    background-color: styles.$hospital-green;
+    background-color: variables.$hospital-green;
     border-radius: 8px;
     border: none;
-    color: styles.$white;
+    color: variables.$white;
     width: 100%;
     cursor: pointer;
-    font-size: styles.$md;
+    font-size: variables.$md;
     font-weight: bold;
     height: 50px;
 }

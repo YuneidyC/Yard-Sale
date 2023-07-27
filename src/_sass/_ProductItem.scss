@@ -30,16 +30,16 @@
 }
 .product-info div p:nth-child(1) {
     font-weight: bold;
-	font-size: styles.$md;
+	font-size: variables.$md;
 	margin-top: 0;
 	margin-bottom: 4px;
 }
 .product-info div p:nth-child(2) {
 	height: 48px;
-    font-size: styles.$sm;
+    font-size: variables.$sm;
 	margin-top: 0;
 	margin-bottom: 0;
-	color: styles.$very-light-pink;
+	color: variables.$very-light-pink;
 	min-width: 100px;
 }
 @media (max-width: 640px) {

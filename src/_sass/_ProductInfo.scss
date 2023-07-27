@@ -5,24 +5,24 @@
 }
 .ProductInfo>div>p:nth-child(1) {
     font-weight: bold;
-    font-size: styles.$md;
+    font-size: variables.$md;
     margin-top: 0;
     margin-bottom: 4px;
 }
 .ProductInfo>div>p:nth-child(2) {
-    color: styles.$very-light-pink;
-    font-size: styles.$md;
+    color: variables.$very-light-pink;
+    font-size: variables.$md;
     margin-top: 0;
     margin-bottom: 36px;
 }
 .primary-button {
-    background-color: styles.$hospital-green;
+    background-color: variables.$hospital-green;
     border-radius: 8px;
     border: none;
-    color: styles.$white;
+    color: variables.$white;
     width: 100%;
     cursor: pointer;
-    font-size: styles.$md;
+    font-size: variables.$md;
     font-weight: bold;
     height: 50px;
 }
