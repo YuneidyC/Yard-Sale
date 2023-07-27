@@ -1,2 +1,3 @@
+source: src
 sass:
   sass_dir: src/_sass
