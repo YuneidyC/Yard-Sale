@@ -1,4 +1,1 @@
-sass:
-  sass_dir: src/_sass
-verbose: true
-destination: public
+
