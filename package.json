@@ -1,5 +1,6 @@
 {
     "homepage": "https://yuneidyc.github.io/Yard-Sale/",
+    "private": false,
     "name": "yard-sale",
     "version": "1.0.0",
     "description": "E-commerce page",
