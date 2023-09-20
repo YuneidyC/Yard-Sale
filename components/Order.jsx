@@ -1,5 +1,5 @@
 import React from 'react';
-import '@styles/_Order.scss';
+import '@styles/order.css';
 
 import arrow from '@icons/flechita.svg';
 

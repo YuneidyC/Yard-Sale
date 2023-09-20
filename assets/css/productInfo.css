@@ -1,28 +1,26 @@
-@import 'variables';
-
 .ProductInfo {
     margin: 24px 24px 0 24px;
 }
 .ProductInfo>div>p:nth-child(1) {
     font-weight: bold;
-    font-size: $md;
+    font-size: var(--md);
     margin-top: 0;
     margin-bottom: 4px;
 }
 .ProductInfo>div>p:nth-child(2) {
-    color: $very-light-pink;
-    font-size: $md;
+    color: var(--very-light-pink);
+    font-size: var(--md);
     margin-top: 0;
     margin-bottom: 36px;
 }
 .primary-button {
-    background-color: $hospital-green;
+    background-color: var(--hospital-green);
     border-radius: 8px;
     border: none;
-    color: $white;
+    color: var(--white);
     width: 100%;
     cursor: pointer;
-    font-size: $md;
+    font-size: var(--md);
     font-weight: bold;
     height: 50px;
 }
