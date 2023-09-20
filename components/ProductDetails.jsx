@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import AppContext from '@context/AppContext';
 import add from '@icons/bt_add_to_cart.svg';
-import '@styles/_ProductDetails.scss';
+import '@styles/productDetails.css';
 import close from '@icons/cancel.png';
 
 const ProductDetails = ({ product, setShowProductDetails }) => {

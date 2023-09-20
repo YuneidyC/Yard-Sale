@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import '@styles/_ProductItem.scss';
+import '@styles/productItem.css';
 import AppContext from '@context/AppContext';
 import addToCartImage from '@icons/bt_add_to_cart.svg';
 

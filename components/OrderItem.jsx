@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import AppContext from '../context/AppContext';
-import '@styles/_OrderItem.scss';
+import '@styles/orderItem.css';
 import close from '@icons/icon_close.png';
 import add from '@icons/add.png';
 import reduce from '@icons/reduce.svg';

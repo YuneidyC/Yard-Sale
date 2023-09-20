@@ -7,7 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js',
-        // publicPath: '/',
+        publicPath: '/',
     },
     mode: 'development',
     resolve: {
@@ -17,7 +17,7 @@ module.exports = {
             '@containers': path.resolve(__dirname, 'containers'),
             '@pages': path.resolve(__dirname, 'pages'),
             '@routes': path.resolve(__dirname, 'routes'),
-            '@styles': path.resolve(__dirname, '_sass'),
+            '@styles': path.resolve(__dirname, 'assets/css'),
             '@assets': path.resolve(__dirname, 'assets'),
             '@icons': path.resolve(__dirname, 'assets/icons'),
             '@logos': path.resolve(__dirname, 'assets/logos'),
@@ -28,7 +28,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.js|jsx/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
@@ -43,7 +43,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.css$/,
                 use: [
                     "style-loader",
                     "css-loader",
@@ -58,8 +58,8 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './index.html',
-            filename: 'index.html'
+            template: './public/index.html',
+            filename: './index.html'
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css'
@@ -69,7 +69,6 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'dist'),
         },
-        historyApiFallback: true,
         compress: true,
         port: 3000,
     }
