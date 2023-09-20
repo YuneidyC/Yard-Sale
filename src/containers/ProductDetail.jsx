@@ -1,6 +1,6 @@
 import React from 'react';
-import '@styles/productDetail.css';
-import close from '@icons/icon_close.png';
+import 'Styles/productDetail.css';
+import close from 'Icons/icon_close.png';
 
 const ProductDetail = () => {
     return (

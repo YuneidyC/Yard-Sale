@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import useGetProducts from '@hooks/useGetProducts';
+import useGetProducts from 'Hooks/useGetProducts';
 
 const initialState = {
     cart: [],

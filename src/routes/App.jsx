@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '@pages/Home';
-import AppContext from '@context/AppContext';
-import useInitialState from '@hooks/useInitialState';
-import '@styles/main.css';
+// HashRouter
+import { BrowserRouter, Route } from 'react-router-dom';
+import Home from 'Pages/Home';
+import AppContext from 'Context/AppContext';
+import useInitialState from 'Hooks/useInitialState';
+import 'Styles/main.css';
 
 const App = () => {
     const initialState = useInitialState();

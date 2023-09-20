@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState, useRef } from 'react';
-import ProductItem from '@components/ProductItem';
-import ProductDetails from '@components/ProductDetails';
-import '@styles/productList.css';
-import AppContext from '@context/AppContext';
+import React, { useContext, useState } from 'react';
+import ProductItem from 'Components/ProductItem';
+import ProductDetails from 'Components/ProductDetails';
+import 'Styles/productList.css';
+import AppContext from 'Context/AppContext';
 
 const ProductList = () => {
     const { currentProducts } = useContext(AppContext);

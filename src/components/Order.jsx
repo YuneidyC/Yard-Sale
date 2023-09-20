@@ -1,7 +1,7 @@
 import React from 'react';
-import '@styles/order.css';
+import 'Styles/order.css';
 
-import arrow from '@icons/flechita.svg';
+import arrow from 'Icons/flechita.svg';
 
 const Order = () => {
     return (

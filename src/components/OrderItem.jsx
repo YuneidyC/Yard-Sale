@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import AppContext from '../context/AppContext';
-import '@styles/orderItem.css';
-import close from '@icons/icon_close.png';
-import add from '@icons/add.png';
-import reduce from '@icons/reduce.svg';
+import 'Styles/orderItem.css';
+import close from 'Icons/icon_close.png';
+import add from 'Icons/add.png';
+import reduce from 'Icons/reduce.svg';
 
 const OrderItem = ({ product, index }) => {
     const { removeFromCart, reduceItem, addToCart } = useContext(AppContext);

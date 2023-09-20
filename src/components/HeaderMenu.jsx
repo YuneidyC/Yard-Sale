@@ -1,6 +1,6 @@
 import React, { useContext, useRef, useEffect } from 'react';
-import '@styles/headerMenu.css';
-import AppContext from '@context/AppContext';
+import 'Styles/headerMenu.css';
+import AppContext from 'Context/AppContext';
 
 const HeaderMenu = (props) => {
     const { getAllProductsWithCategory, getAllProducts } = useContext(AppContext);

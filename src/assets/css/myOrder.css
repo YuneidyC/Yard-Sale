@@ -24,7 +24,7 @@
     top: 3px;
     width: 15px;
     height: 15px;
-    background-image: url('/assets/icons/flechita.svg');
+    background-image: url('../icons/flechita.svg');
     background-repeat: no-repeat;
     border: none;
     background-color: var(--white);

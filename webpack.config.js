@@ -6,23 +6,22 @@ module.exports = {
     entry: './index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'bundle.js',
-        publicPath: '/',
+        filename: 'bundle.js'
     },
     mode: 'development',
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
-            '@components': path.resolve(__dirname, 'components'),
-            '@containers': path.resolve(__dirname, 'containers'),
-            '@pages': path.resolve(__dirname, 'pages'),
-            '@routes': path.resolve(__dirname, 'routes'),
-            '@styles': path.resolve(__dirname, 'assets/css'),
-            '@assets': path.resolve(__dirname, 'assets'),
-            '@icons': path.resolve(__dirname, 'assets/icons'),
-            '@logos': path.resolve(__dirname, 'assets/logos'),
-            '@hooks': path.resolve(__dirname, 'hooks'),
-            '@context': path.resolve(__dirname, 'context'),
+            Components: path.resolve(__dirname, './src/components/'),
+            Containers: path.resolve(__dirname, './src/containers/'),
+            Pages: path.resolve(__dirname, './src/pages/'),
+            Routes: path.resolve(__dirname, './src/routes/'),
+            Styles: path.resolve(__dirname, './src/assets/css/'),
+            Assets: path.resolve(__dirname, './src/assets/'),
+            Icons: path.resolve(__dirname, './src/assets/icons/'),
+            Logos: path.resolve(__dirname, './src/assets/logos/'),
+            Hooks: path.resolve(__dirname, './src/hooks/'),
+            Context: path.resolve(__dirname, './src/context/'),
         }
     },
     module: {
@@ -58,8 +57,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html',
-            filename: './index.html'
+            template: 'public/index.html'
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css'

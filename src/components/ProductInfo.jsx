@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import '@styles/_ProductInfo.scss';
-import add from '@icons/bt_add_to_cart.svg';
-import close from '@icons/cancel.png';
-import AppContext from '@context/AppContext';
+import 'Styles/_ProductInfo.scss';
+import add from 'Icons/bt_add_to_cart.svg';
+import close from 'Icons/cancel.png';
+import AppContext from 'Context/AppContext';
 
 const ProductInfo = (props) => {
     const { addToCart } = useContext(AppContext);
