@@ -10,9 +10,7 @@ const App = () => {
     return (
         <AppContext.Provider value={initialState}>
             <BrowserRouter basename="/Yard-Sale">
-                <Route exact path="/">
-                    <Home />
-                </Route>
+                <Route exact path="/" component={Home} />
             </BrowserRouter>
         </AppContext.Provider>
     );
