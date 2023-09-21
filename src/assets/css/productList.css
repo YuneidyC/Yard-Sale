@@ -1,13 +1,13 @@
 .ProductList_item_info {
     position: sticky;
-    width: 90%;
+    width: 100%;
     height: 266px;
     background: var(--white);
     top: 60px;
     overflow: hidden;
     margin: auto;
     border-radius: 9px;
-    max-width: 840px;
+    max-width: 717px;
 }
 .ProductList {
     display: grid;
