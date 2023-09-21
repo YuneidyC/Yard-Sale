@@ -77,7 +77,8 @@ const Header = () => {
                     </li>
                     <li
                         className="navbar-shopping-cart"
-                        onClick={() => { setToggleOrders(!toggleOrders); setToggleMenu(false); setToggle(false) }}
+                        onMouseDown={() => {setToggleOrders(!toggleOrders); setToggleMenu(false); setToggle(false) }}
+                        
                     >
                         <img src={shoppingCart} alt="shopping cart" />
                         {state.cart.length > 0 ? <div>{totalCartItems()}</div> : null}

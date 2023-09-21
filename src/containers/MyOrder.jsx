@@ -19,7 +19,7 @@ const MyOrder = (props) => {
                 props.changeToggleOrders('true');
             }
         };
-        document.addEventListener("click", handleClickOutside);
+        document.addEventListener("mousedown", handleClickOutside);
     }, [ref]);
 
     return (
@@ -33,7 +33,6 @@ const MyOrder = (props) => {
                     <OrderItem product={product} key={product.id} index={index} />
                 ))}
             </div>
-
             <div className="order">
                 <p>
                     <span>Total</span>
@@ -43,7 +42,6 @@ const MyOrder = (props) => {
             <button className="primary-button">
                 Checkout
             </button>
-
         </aside >
     );
 }
