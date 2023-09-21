@@ -1,6 +1,6 @@
 import React from 'react';
 // HashRouter
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from 'Pages/Home';
 import AppContext from 'Context/AppContext';
 import useInitialState from 'Hooks/useInitialState';
@@ -10,11 +10,11 @@ const App = () => {
     const initialState = useInitialState();
     return (
         <AppContext.Provider value={initialState}>
-            <BrowserRouter>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </AppContext.Provider>
     );
 }
