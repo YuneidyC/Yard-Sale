@@ -64,8 +64,19 @@
     margin: 0 15px 14px;
     white-space: normal;
     text-overflow: ellipsis;
-    overflow: scroll;
+    overflow-y: auto;
     padding-right: 4px;
+    scrollbar-color: var(--darkGrey) var(--background);
+    scrollbar-width: thin;
+}
+
+.project__list__items::-webkit-scrollbar,
+.project__list__items::-webkit-scrollbar-thumb {
+    width: 15px;
+
+    background-color: rgba(87, 85, 85, 0.212);
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 
 .ProductDetails__info-container .primary-button {
