@@ -1,6 +1,6 @@
 import React from 'react';
 // HashRouter
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from 'Pages/Home';
 import AppContext from 'Context/AppContext';
 import useInitialState from 'Hooks/useInitialState';
@@ -10,8 +10,10 @@ const App = () => {
     const initialState = useInitialState();
     return (
         <AppContext.Provider value={initialState}>
-            <BrowserRouter basename="/Yard-Sale">
-                <Route exact path="/" component={Home} />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                </Routes>
             </BrowserRouter>
         </AppContext.Provider>
     );
