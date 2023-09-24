@@ -1,5 +1,4 @@
 import React from 'react';
-// HashRouter
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from 'Pages/Home';
 import AppContext from 'Context/AppContext';

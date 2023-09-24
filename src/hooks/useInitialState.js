@@ -9,11 +9,12 @@ const useInitialState = () => {
     const [state, setState] = useState(initialState);
     const [currentProducts, setCurrentProducts] = useState([]);
     const initialProducts = useGetProducts();
+    const productRequestLimit = initialProducts.length;
 
     useEffect(() => {
         setCurrentProducts(initialProducts);
     }, [initialProducts]);
-    
+
     function getAllProductsWithCategory(id) {
         setCurrentProducts([]);
         const products = initialProducts.filter(product =>
@@ -73,6 +74,7 @@ const useInitialState = () => {
         reduceItem,
         getAllProducts,
         getAllProductsWithCategory,
+        productRequestLimit
     }
 }
 
