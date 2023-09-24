@@ -3,11 +3,10 @@ import React, { useContext, useState } from 'react';
 import ProductItem from 'Components/ProductItem';
 import ProductDetails from 'Components/ProductDetails';
 import AppContext from 'Context/AppContext';
-import SkeletonProduct from '../components/SkeletonProduct';
 import 'Styles/productList.css';
 
 const ProductList = () => {
-    const { currentProducts, productRequestLimit } = useContext(AppContext);
+    const { currentProducts } = useContext(AppContext);
     const [showProductDetails, setShowProductDetails] = useState([]);
 
     return (
@@ -18,7 +17,7 @@ const ProductList = () => {
                 </div>
             }
             <div className="ProductList">
-                {currentProducts.length < productRequestLimit ? <SkeletonProduct /> : currentProducts.map((product) => (
+                {currentProducts.map((product) => (
                     <ProductItem key={product.id} product={product} setShowProductDetails={setShowProductDetails} />
                 ))}
             </div>
