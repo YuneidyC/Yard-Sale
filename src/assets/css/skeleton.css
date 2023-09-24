@@ -1,0 +1,60 @@
+.skeleton {
+    display: flex;
+    width: 240px;
+    height: 336px;
+    flex-direction: column;
+    position: relative;
+}
+
+.skeleton .skeleton-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.skeleton .left-col span {
+    border-radius: 20px;
+}
+
+.skeleton .avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    position: absolute;
+    left: 85%;
+    bottom: 24px;
+}
+
+.skeleton .avatar-skeleton {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.skeleton .avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.skeleton .right-col {
+    width: 200px;
+    height: 72px;
+    margin-top: 12px;
+}
+
+.skeleton p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.skeleton p:first-child {
+    margin-bottom: 4px;
+    height: 20px;
+    width: 66px;
+}
+
+.skeleton p:nth-child(2) {
+    height: 26px;
+}
