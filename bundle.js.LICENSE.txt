@@ -7,6 +7,13 @@ object-assign
 /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
 /**
+ * @license MIT
+ * topbar 1.0.0, 2021-01-06
+ * http://buunguyen.github.io/topbar
+ * Copyright (c) 2021 Buu Nguyen
+ */
+
+/**
  * React Router v6.0.2
  *
  * Copyright (c) Remix Software Inc.
