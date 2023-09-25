@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import useGetProducts from 'Hooks/useGetProducts';
+import { useEffect, useState } from "react";
+import useGetProducts from "Hooks/useGetProducts";
 
 const initialState = {
     cart: [],
-}
+};
 
 const useInitialState = () => {
     const [state, setState] = useState(initialState);
@@ -13,11 +13,12 @@ const useInitialState = () => {
     useEffect(() => {
         setCurrentProducts(initialProducts);
     }, [initialProducts]);
-    
+
     function getAllProductsWithCategory(id) {
         setCurrentProducts([]);
-        const products = initialProducts.filter(product =>
-            product.category.id === id);
+        const products = initialProducts.filter(
+            (product) => product.category.id === id
+        );
         setCurrentProducts(products);
     }
 
@@ -27,7 +28,7 @@ const useInitialState = () => {
 
     const addToCart = (payload) => {
         if (state.cart.length >= 0) {
-            const found = state.cart.find(element => {
+            const found = state.cart.find((element) => {
                 return element.id === payload.id;
             });
             if (found !== undefined) {
@@ -49,9 +50,11 @@ const useInitialState = () => {
     const removeFromCart = (payload, indexValue) => {
         setState({
             ...state,
-            cart: state.cart.filter((items, index) => items.id !== payload && index !== indexValue),
+            cart: state.cart.filter(
+                (items, index) => items.id !== payload && index !== indexValue
+            ),
         });
-    }
+    };
 
     const reduceItem = (payload, indexValue) => {
         if (payload.qty > 1) {
@@ -59,10 +62,21 @@ const useInitialState = () => {
             setState({
                 ...state,
                 cart: [...state.cart],
-            })
+            });
         } else {
             removeFromCart(payload, indexValue);
         }
+    };
+
+    function introAnimation() {
+        const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+        setTimeout(async function () {
+            const welcome = document.getElementsByClassName("intro")[0].childNodes;
+            welcome[0].classList.add("animation");
+            await delay(500);
+            welcome[0].style.visibility = "hidden";
+            welcome[0].classList.remove("animation");
+        });
     }
 
     return {
@@ -73,7 +87,8 @@ const useInitialState = () => {
         reduceItem,
         getAllProducts,
         getAllProductsWithCategory,
-    }
-}
+        introAnimation
+    };
+};
 
 export default useInitialState;

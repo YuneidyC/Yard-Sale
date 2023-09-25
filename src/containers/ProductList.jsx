@@ -8,7 +8,6 @@ const ProductList = () => {
     const { currentProducts } = useContext(AppContext);
     const [showProductDetails, setShowProductDetails] = useState([]);
 
-
     return (
         <section className="main-container">
             {showProductDetails.length !== 0 &&
