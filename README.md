@@ -18,12 +18,14 @@ This project was developed during this courses:
 I have made these improvements on top of the Platzi courses' contents:
 
 - Cart
-  - Buttons to add and remove items.
-  - Add total price calculation.
-  - Stacking same items.
-  - Add multiple ways to close (e.g. when clicking outside).
-- Responsive.
-- Filter items based on category. Note that images don't match item categories in the REST API used.
+  - Buttons to add and remove items
+  - Add total price calculation
+  - Stacking same items
+  - Add multiple ways to close (e.g. when clicking outside)
+- Responsive
+- Filter items based on category. Note that images don't match item categories in the REST API used
+- Loading animations
+- Intro page
 
 ## Tech stack
 
