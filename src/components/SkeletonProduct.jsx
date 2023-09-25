@@ -8,7 +8,7 @@ const SkeletonProduct = () => {
     return (
         <div className="skeleton">
             <div className="left-col">
-                <Skeleton width="240px" height="240px" />
+                <Skeleton width="100%" height="100%" />
             </div>
             <div className="right-col">
                 <p>

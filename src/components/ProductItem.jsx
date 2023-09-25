@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect, useRef } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 import AppContext from "Context/AppContext";
 import addToCartImage from "Icons/bt_add_to_cart.svg";
@@ -14,7 +14,6 @@ const ProductItem = ({ product, setShowProductDetails }) => {
         addToCart(item);
     };
 
-    const ref = useRef();
     useEffect(() => {
         const img = new Image();
         img.src = product.images[0];
@@ -26,7 +25,7 @@ const ProductItem = ({ product, setShowProductDetails }) => {
     return (
         <>
             {!imageLoaded ? (
-                <SkeletonProduct ref={ref} />
+                <SkeletonProduct />
             ) : (
                 <div className="ProductItem">
                     <img

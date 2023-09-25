@@ -11,6 +11,10 @@
     align-items: flex-start;
     position: relative;
 }
+.skeleton .left-col {
+    width: 100%;
+    height: 240px;
+}
 .skeleton .left-col span {
     border-radius: 20px;
 }
@@ -48,5 +52,29 @@
     width: 66px;
 }
 .skeleton p:nth-child(2) {
+    width: 180px;
     height: 26px;
+}
+
+@media (max-width: 640px) {
+    .skeleton {
+        width: 162px;
+        height: auto;
+    }
+    .skeleton .left-col {
+        width: 100%;
+        height: 140px;
+    }
+    .skeleton .right-col {
+        width: 100px;
+        height: 80px;
+    }
+    .skeleton .avatar {
+        bottom: 19px;
+        left: 127px;
+    }
+    .skeleton p:nth-child(2) {
+        width: 100px;
+        height: 30px;
+    }
 }
