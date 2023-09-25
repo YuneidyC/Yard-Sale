@@ -5,11 +5,9 @@
     justify-content: center;
     align-self: center;
 }
-
 .intro img {
     width: 40%;
 }
-
 .intro .animation {
     animation-name: intro;
     animation-duration: 1s;

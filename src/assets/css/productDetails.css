@@ -7,7 +7,6 @@
     grid-template-rows: 100%;
     grid-auto-flow: column;
 }
-
 .ProductDetails__image-container {
     width: 100%;
     height: 100%;
@@ -15,14 +14,12 @@
     grid-row: 1 / 2;
     z-index: 2;
 }
-
 .ProductDetails__image-container .image {
     width: 100%;
     height: 100%;
     background-size: cover;
     border-radius: 0 0 8px 8px;
 }
-
 .ProductDetails__image-container .close {
     width: 30px;
     height: 30px;
@@ -31,7 +28,6 @@
     right: 8px;
     cursor: pointer;
 }
-
 .ProductDetails__info-container {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -42,20 +38,17 @@
     height: 100%;
     width: 100%;
 }
-
 .ProductDetails__info-container .price {
     font-weight: bold;
     font-size: var(--md);
     margin: 16px 14px;
 }
-
 .ProductDetails__info-container .title {
     height: 40px;
     color: var(--very-light-pink);
     font-size: var(--md);
     margin: 0 15px 14px;
 }
-
 .ProductDetails__info-container .description {
     height: 106px;
     font-weight: bold;
@@ -69,16 +62,13 @@
     scrollbar-color: var(--darkGrey) var(--background);
     scrollbar-width: thin;
 }
-
 .project__list__items::-webkit-scrollbar,
 .project__list__items::-webkit-scrollbar-thumb {
     width: 15px;
-
     background-color: rgba(87, 85, 85, 0.212);
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
-
 .ProductDetails__info-container .primary-button {
     background-color: var(--hospital-green);
     border-radius: 8px;
@@ -90,7 +80,6 @@
     font-weight: bold;
     height: 40px;
 }
-
 .ProductDetails__info-container .primary-button img {
     position: absolute;
     width: 30px;
@@ -98,7 +87,6 @@
     left: 30px;
     bottom: 5px;
 }
-
 .ProductDetails__info-container .add-to-cart-button {
     position: relative;
 }
@@ -108,6 +96,7 @@
         display: none;
     }
 }
+
 @media (max-width: 740px) {
     .ProductDetails {
         grid-template-columns: 1fr;

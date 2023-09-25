@@ -1,13 +1,13 @@
 .ProductInfo {
     margin: 24px 24px 0 24px;
 }
-.ProductInfo>div>p:nth-child(1) {
+.ProductInfo > div > p:nth-child(1) {
     font-weight: bold;
     font-size: var(--md);
     margin-top: 0;
     margin-bottom: 4px;
 }
-.ProductInfo>div>p:nth-child(2) {
+.ProductInfo > div > p:nth-child(2) {
     color: var(--very-light-pink);
     font-size: var(--md);
     margin-top: 0;

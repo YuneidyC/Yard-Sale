@@ -1,9 +1,10 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
 
-import "Styles/productItem.css";
 import AppContext from "Context/AppContext";
 import addToCartImage from "Icons/bt_add_to_cart.svg";
 import SkeletonProduct from "./SkeletonProduct";
+
+import "Styles/productItem.css";
 
 const ProductItem = ({ product, setShowProductDetails }) => {
     const { addToCart } = useContext(AppContext);

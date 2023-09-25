@@ -1,19 +1,21 @@
-import React, { useContext, useRef, useEffect } from 'react';
-import 'Styles/headerMenu.css';
-import AppContext from 'Context/AppContext';
+import React, { useContext, useRef, useEffect } from "react";
+
+import "Styles/headerMenu.css";
+import AppContext from "Context/AppContext";
 
 const HeaderMenu = (props) => {
-    const { getAllProductsWithCategory, getAllProducts } = useContext(AppContext);
+    const { getAllProductsWithCategory, getAllProducts } =
+        useContext(AppContext);
 
     const productsCategory = (category) => {
         getAllProductsWithCategory(category);
-    }
+    };
 
     const ref = useRef();
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (ref.current && !ref.current.contains(event.target)) {
-                props.changeToggleMenu('true');
+                props.changeToggleMenu("true");
             }
         };
         document.addEventListener("click", handleClickOutside);
@@ -24,54 +26,78 @@ const HeaderMenu = (props) => {
             <h3>CATEGORIES</h3>
             <ul>
                 <li>
-                    <button type='button' onClick={() => {
-                        getAllProducts()
-                    }}>All
+                    <button
+                        type="button"
+                        onClick={() => {
+                            getAllProducts();
+                        }}
+                    >
+                        All
                     </button>
                 </li>
                 <li>
-                    <button type='button' onClick={() => {
-                        productsCategory(1)
-                    }}>Clothes
+                    <button
+                        type="button"
+                        onClick={() => {
+                            productsCategory(1);
+                        }}
+                    >
+                        Clothes
                     </button>
                 </li>
                 <li>
-                    <button type='button' onClick={() => {
-                        productsCategory(2)
-                    }}>Electronics
+                    <button
+                        type="button"
+                        onClick={() => {
+                            productsCategory(2);
+                        }}
+                    >
+                        Electronics
                     </button>
                 </li>
                 <li>
-                    <button type='button' onClick={() => {
-                        productsCategory(3)
-                    }}>Furnitures
+                    <button
+                        type="button"
+                        onClick={() => {
+                            productsCategory(3);
+                        }}
+                    >
+                        Furnitures
                     </button>
                 </li>
                 <li>
-                    <button type='button' onClick={() => {
-                        productsCategory(4)
-                    }}>Shoes
+                    <button
+                        type="button"
+                        onClick={() => {
+                            productsCategory(4);
+                        }}
+                    >
+                        Shoes
                     </button>
                 </li>
                 <li>
-                    <button type='button' onClick={() => {
-                        productsCategory(5)
-                    }}>Others
+                    <button
+                        type="button"
+                        onClick={() => {
+                            productsCategory(5);
+                        }}
+                    >
+                        Others
                     </button>
                 </li>
             </ul>
-            <div className='separator'></div>
-            <div className='account-user'>
+            <div className="separator"></div>
+            <div className="account-user">
                 <ul>
                     <li>
-                        <a href="/" className="title">My orders</a>
+                        <a href="/" className="title">
+                            My orders
+                        </a>
                     </li>
                     <li>
                         <a href="/">My account</a>
                     </li>
-                    <li>
-                        platzi@example.com
-                    </li>
+                    <li>platzi@example.com</li>
                     <li>
                         <a href="/">Sign out</a>
                     </li>
@@ -79,6 +105,6 @@ const HeaderMenu = (props) => {
             </div>
         </div>
     );
-}
+};
 
 export default HeaderMenu;

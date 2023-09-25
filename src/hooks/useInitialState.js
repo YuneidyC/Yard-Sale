@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import useGetProducts from "Hooks/useGetProducts";
 
 const initialState = {

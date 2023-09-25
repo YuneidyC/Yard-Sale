@@ -1,6 +1,8 @@
-import React from 'react';
-import 'Styles/productDetail.css';
-import close from 'Icons/icon_close.png';
+import React from "react";
+
+import close from "Icons/icon_close.png";
+
+import "Styles/productDetail.css";
 
 const ProductDetail = () => {
     return (
@@ -10,6 +12,6 @@ const ProductDetail = () => {
             </div>
         </aside>
     );
-}
+};
 
 export default ProductDetail;

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import ProductList from 'Containers/ProductList';
-import Header from 'Components/Header';
-import Intro from './Intro';
+import ProductList from "Containers/ProductList";
+import Header from "Components/Header";
+import Intro from "./Intro";
 
 const Home = () => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -13,12 +13,14 @@ const Home = () => {
 
     return (
         <>
-        { !isLoaded ? <Intro onLoadFinishedCb={onLoadFinished}/> :
-            <>
-                <Header />
-                <ProductList />
-            </>
-        }
+            {!isLoaded ? (
+                <Intro onLoadFinishedCb={onLoadFinished} />
+            ) : (
+                <>
+                    <Header />
+                    <ProductList />
+                </>
+            )}
         </>
     );
 };

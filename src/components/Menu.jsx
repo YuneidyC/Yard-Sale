@@ -1,12 +1,15 @@
-import React from 'react';
-import 'Styles/menu.css';
+import React from "react";
+
+import "Styles/menu.css";
 
 const Menu = () => {
     return (
         <div className="Menu">
             <ul>
                 <li>
-                    <a href="/" className="title">My orders</a>
+                    <a href="/" className="title">
+                        My orders
+                    </a>
                 </li>
                 <li>
                     <a href="/">My account</a>
@@ -17,6 +20,6 @@ const Menu = () => {
             </ul>
         </div>
     );
-}
+};
 
 export default Menu;
