@@ -17,9 +17,12 @@ const ProductItem = ({ product, setShowProductDetails }) => {
     useEffect(() => {
         const img = new Image();
         img.src = product.images[0];
-        img.onload = () => {
+        setTimeout(() => {
+            if (img.onload === null) {
+                product.images[0] = product.category.image;
+            }
             setImageLoaded(true);
-        };
+        }, 3000);
     });
 
     return (
