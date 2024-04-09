@@ -11,9 +11,11 @@
 
 ## About the project
 
-This project was developed during this courses:
+This project was developed during this course:
 
 - [**Practice Frontend Developer**](https://platzi.com/cursos/frontend-developer-practico/)
+
+Using the REST API [https://fakeapi.platzi.com](https://fakeapi.platzi.com/).
 
 I have made these improvements on top of the Platzi courses' contents:
 
