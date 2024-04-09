@@ -17,12 +17,11 @@ const ProductItem = ({ product, setShowProductDetails }) => {
     useEffect(() => {
         const img = new Image();
         img.src = product.images[0];
-        setTimeout(() => {
-            if (img.onload === null) {
-                product.images[0] = product.category.image;
-            }
-            setImageLoaded(true);
-        }, 3000);
+        let isLoadedSuccessfully = img.complete && img.naturalWidth !== 0;
+        if (!isLoadedSuccessfully) {
+            product.images[0] = product.category.image;
+        }
+        setImageLoaded(true);
     });
 
     return (
