@@ -15,6 +15,7 @@
     height: 480px;
     overflow: auto;
     width: 100%;
+    scrollbar-width: thin;
 }
 .title-container {
     display: flex;
