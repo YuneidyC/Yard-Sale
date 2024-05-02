@@ -1,0 +1,62 @@
+.signup-container {
+    width: 341px;
+    height: 424px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+form > label {
+    color: var(--black);
+    font-weight: 600;
+}
+
+form > input {
+    width: 339px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: var(--text-input-field);
+}
+
+form > button {
+    font-family: "Quicksand", sans-serif;
+    width: 339px;
+    height: 59px;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+    background-color: var(--hospital-green);
+    border: none;
+}
+
+#user-info {
+    font-family: "Quicksand", sans-serif;
+    color: var(--very-light-pink);
+    font-size: 15px;
+    text-indent: 15px;
+}
+
+input[type=text] {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-weight: 600;
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder {
+    color: var(--very-light-pink);
+}
