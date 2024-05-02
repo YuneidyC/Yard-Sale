@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import { useNavigate } from 'react-router-dom';
 
 import Menu from "Components/Menu";
 import HeaderMenu from "Components/HeaderMenu";
@@ -10,6 +11,7 @@ import shoppingCart from "Icons/icon_shopping_cart.svg";
 import "Styles/header.css";
 
 const Header = () => {
+    const navigate = useNavigate();
     const [toggle, setToggle] = useState(false);
     const [toggleOrders, setToggleOrders] = useState(false);
     const [toogleMenu, setToggleMenu] = useState(false);
@@ -107,14 +109,16 @@ const Header = () => {
             </div>
             <div className="navbar-right">
                 <ul>
-                    <li
+                    {/* <li
                         className="navbar-email"
                         onClick={() => {
                             setToggle(!toggle);
                             setToggleOrders(false);
                         }}
-                    >
-                        platzi@example.com
+                    > 
+                    </li> */}
+                    <li className="navbar-signin">
+                        <p onClick={() => navigate('/signin')}>Sign in</p>
                     </li>
                     <li
                         className="navbar-shopping-cart"
