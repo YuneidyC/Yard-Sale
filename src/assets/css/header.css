@@ -40,6 +40,7 @@ nav {
     background-color: var(--white);
     font-size: var(--md);
     cursor: pointer;
+    font-family: var(--font-family);
 }
 .navbar-left ul li button:hover,
 .navbar-right ul li button:hover {
